@@ -1,6 +1,5 @@
 package com.example.springsocial.security;
 
-import java.nio.file.attribute.UserPrincipal;
 
 import javax.transaction.Transactional;
 
