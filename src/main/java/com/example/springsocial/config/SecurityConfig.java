@@ -15,6 +15,11 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import com.example.springsocial.security.oauth2.CustomOAuth2UserService;
+import com.example.springsocial.security.oauth2.HttpCookieOAuth2AuthorizationRequestRepository;
+import com.example.springsocial.security.oauth2.OAuth2AuthenticationFailureHandler;
+import com.example.springsocial.security.oauth2.OAuth2AuthenticationSuccessHandler;
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(
