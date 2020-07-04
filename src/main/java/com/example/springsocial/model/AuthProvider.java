@@ -2,7 +2,7 @@ package com.example.springsocial.model;
 
 public enum AuthProvider {
 	local,
-	facebool,
+	facebook,
 	google,
 	github
 }
