@@ -1,6 +1,5 @@
 package com.example.springsocial.security.oauth2;
 
-import java.nio.file.attribute.UserPrincipal;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,11 +10,15 @@ import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
+import com.example.springsocial.exception.OAuth2AuthenticationProcessingException;
 import com.example.springsocial.model.AuthProvider;
 import com.example.springsocial.model.User;
 import com.example.springsocial.repository.UserRepository;
-import com.nimbusds.oauth2.sdk.util.StringUtils;
+import com.example.springsocial.security.UserPrincipal;
+import com.example.springsocial.security.oauth2.user.OAuth2UserInfo;
+import com.example.springsocial.security.oauth2.user.OAuth2UserInfoFactory;
 
 @Service
 public class CustomOAuth2UserService extends DefaultOAuth2UserService {

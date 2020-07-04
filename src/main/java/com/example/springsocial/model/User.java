@@ -1,6 +1,5 @@
 package com.example.springsocial.model;
 
-import java.security.AuthProvider;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -116,8 +115,8 @@ public class User {
 		return provider;
 	}
 
-	public void setProvider(AuthProvider provider) {
-		this.provider = provider;
+	public void setProvider(AuthProvider local) {
+		this.provider = local;
 	}
 
 	public String getProviderId() {
