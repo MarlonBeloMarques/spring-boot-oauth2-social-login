@@ -17,22 +17,22 @@ spring:
         client:
           registration:
             google:
-              clientId: 5014057553-8gm9um6vnli3cle5rgigcdjpdrid14m9.apps.googleusercontent.com
-              clientSecret: tWZKVLxaD_ARWsriiiUFYoIk
+              clientId: 452232005877-gdj2a3enprckcf9lcucibd96qpm2km1t.apps.googleusercontent.com
+              clientSecret: w4RRQVpLD0Ba14liclUSX3Tp
               redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - email
                 - profile
             facebook:
-              clientId: 121189305185277
-              clientSecret: 42ffe5aa7379e8326387e0fe16f34132
+              clientId: 263717144601584
+              clientSecret: 0a41720e0b9b40df7c1a35ec676838e1
               redirectUri: "{baseUrl}/oauth2/callback/{registrationId}" # Note that facebook now mandates the use of https redirect URIs, so make sure your app supports https in production
               scope:
                 - email
                 - public_profile
             github:
-              clientId: d3e47fc2ddd966fa4352
-              clientSecret: 3bc0f6b8332f93076354c2a5bada2f5a05aea60d
+              clientId: 2d1fd660b17b08c420bd
+              clientSecret: f8b04dc428582771f107b24a930349dc57ceae11
               redirectUri: "{baseUrl}/oauth2/callback/{registrationId}"
               scope:
                 - user:email
